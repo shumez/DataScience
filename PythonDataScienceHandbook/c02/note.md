@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-03-31 17:24:54
+Modified: 	2019-03-31 18:05:33
 -----
 Copyright (c) 2019 shumez
 -->
@@ -20,6 +20,11 @@ Copyright (c) 2019 shumez
     - [02.01.05 Creating Arrays from Scratch](#020105-Creating-Arrays-from-Scratch)
     - [02.01.06 NumPy Standard Data Types](#020106-NumPy-Standard-Data-Types)
 - [02.02 The Basics of Numpy Arrays](#0202-The-Basics-of-Numpy-Arrays)
+    - [02.02.01 NumPy Array Attributes](#020201-NumPy-Array-Attributes)
+    - [02.02.02 Array Indexing: Accessing Single Elements](#020202-Array-Indexing-Accessing-Single-Elements)
+    - [02.02.03 Array Slicing: Accessing Subarrays](#020203-Array-Slicing-Accessing-Subarrays)
+        - [02.02.03.01 One-dimensional subarrays](#02020301-One-dimensional-subarrays)
+        - [02.02.03.02 Multidimensional subarrays](#02.02.03.02 Multidimensional subarrays)
 - [02.03 Computation on Numpy Arrays: Universal Functions](#0203-Computation-on-Numpy-Arrays-Universal-Functions)
 - [02.04 Aggregations: Min, Max, and Everything in Between](#0204-Aggregations-Min,-Max,-and-Everything-in-Between)
 - [02.05 Computation on Arrays: Broadcasting](#0405-Computation-on-Arrays-Broadcasting)
@@ -57,6 +62,44 @@ A = array.array('i', L)
 
 
 ### 02.01.06 NumPy Standard Data Types
+
+
+## 02.02 The Basics of Numpy Arrays
+
+- Attributes of arrays
+- Indexing of arrays
+- Slicing of arrrays
+- Reshaping of arrays
+- Joining and splitting of arrays
+
+
+### 02.02.01 NumPy Array Attributes
+
+
+### 02.02.02 Array Indexing: Accessing Single Elements
+
+
+### 02.02.03 Array Slicing: Accessing Subarrays
+
+```py
+x[start:stop:step]
+```
+
+#### 02.02.03.01 One-dimensional subarrays
+
+```py
+x[1::2]
+> [1 3 5 7 9]
+```
+
+```py
+x[5::-2]
+> [5 3 1]
+```
+
+
+#### 02.02.03.02 Multidimensional subarrays
+
 
 
 
