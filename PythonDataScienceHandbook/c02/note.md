@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-03-31 18:18:56
+Modified: 	2019-03-31 19:47:14
 -----
 Copyright (c) 2019 shumez
 -->
@@ -26,6 +26,7 @@ Copyright (c) 2019 shumez
         - [02.02.03.01 One-dimensional subarrays](#02020301-One-dimensional-subarrays)
         - [02.02.03.02 Multidimensional subarrays](#02020302-Multidimensional-subarrays)
         - [02.02.03.03 Accessing array rows and columns](#02020303-Accessing-array-rows-and-columns)
+        - [02.02.03.04 Subarrays as no-copy views](#02020304-Subarrays-as-no-copy-views)
 - [02.03 Computation on Numpy Arrays: Universal Functions](#0203-Computation-on-Numpy-Arrays-Universal-Functions)
 - [02.04 Aggregations: Min, Max, and Everything in Between](#0204-Aggregations-Min,-Max,-and-Everything-in-Between)
 - [02.05 Computation on Arrays: Broadcasting](#0405-Computation-on-Arrays-Broadcasting)
@@ -103,6 +104,17 @@ x[5::-2]
 
 
 #### 02.02.03.03 Accessing array rows and columns
+
+#### 02.02.03.04 Subarrays as no-copy views
+
+```py
+x2_sub = x2[:2, :2]
+
+x2_sub[0, 0] = 99
+x2
+```
+
+original array is changed 
 
 
 
