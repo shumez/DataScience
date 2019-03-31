@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-03-31 19:56:4
+Modified: 	2019-03-31 20:11:21
 -----
 Copyright (c) 2019 shumez
 -->
@@ -28,6 +28,7 @@ Copyright (c) 2019 shumez
         - [02.02.03.03 Accessing array rows and columns](#02020303-Accessing-array-rows-and-columns)
         - [02.02.03.04 Subarrays as no-copy views](#02020304-Subarrays-as-no-copy-views)
         - [02.02.03.05 Creating copies of arrays](#02020305-Creating-copies-of-arrays)
+    - [02.02.04 Reshaping of Arrays](#020204-Reshaping-of-Arrays)
 - [02.03 Computation on Numpy Arrays: Universal Functions](#0203-Computation-on-Numpy-Arrays-Universal-Functions)
 - [02.04 Aggregations: Min, Max, and Everything in Between](#0204-Aggregations-Min,-Max,-and-Everything-in-Between)
 - [02.05 Computation on Arrays: Broadcasting](#0405-Computation-on-Arrays-Broadcasting)
@@ -126,6 +127,16 @@ x2_sub_copy = x2[:2, :2].copy()
 
 original array is NOT changed
 
+
+### 02.02.04 Reshaping of Arrays
+
+```py
+# via reshape
+x.reshape((3, 1))
+
+# via newaxis
+x[:, np.newaxis]
+```
 
 
 ## 
