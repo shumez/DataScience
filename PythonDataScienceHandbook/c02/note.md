@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-03-31 22:45:49
+Modified: 	2019-04-01 05:56:51
 -----
 Copyright (c) 2019 shumez
 -->
@@ -37,6 +37,8 @@ Copyright (c) 2019 shumez
     - [02.03.02 Introducing UFuncs](#020302-Introducing-UFuncs)
     - [02.03.03 Exploring NumPy's UFuncs](#020303-Exploring-NumPys-UFuncs)
         - [02.03.03.01 Array arithmetic](#02030301-Array-arithmetic)
+        - [02.03.03.02 Absolute value](#02030302-Absolute-value)
+        - [02.03.03.03 Trigometric functions](#02030303-Trigometric-functions)
 - [02.04 Aggregations: Min, Max, and Everything in Between](#0204-Aggregations-Min,-Max,-and-Everything-in-Between)
 - [02.05 Computation on Arrays: Broadcasting](#0405-Computation-on-Arrays-Broadcasting)
 - [02.06 Comparisons, Masks, and Boolean Logic](#0406-Comparisons,-Masks,-and-Boolean-Logic)
@@ -202,8 +204,9 @@ np.power(x, 2)
 np.mod(x, 2)
 ```
 
+#### 02.03.03.02 Absolute value
 
-
+#### 02.03.03.03 Trigometric functions
 
 ## 
 
