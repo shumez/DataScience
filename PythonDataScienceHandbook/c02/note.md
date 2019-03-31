@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-03-31 21:50:15
+Modified: 	2019-03-31 22:45:49
 -----
 Copyright (c) 2019 shumez
 -->
@@ -191,6 +191,16 @@ NumPy are implemented via **ufunc**
 
 #### 02.03.03.01 Array arithmetic
 
+```py
+np.add(x, 5)
+np.subtract(x, 5)
+np.negative(x)
+np.multiply(x, 2)
+np.divide(x, 2)
+np.floor_divide(x, 2)
+np.power(x, 2)
+np.mod(x, 2)
+```
 
 
 
