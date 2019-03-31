@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-03-31 20:11:21
+Modified: 	2019-03-31 20:35:17
 -----
 Copyright (c) 2019 shumez
 -->
@@ -29,6 +29,9 @@ Copyright (c) 2019 shumez
         - [02.02.03.04 Subarrays as no-copy views](#02020304-Subarrays-as-no-copy-views)
         - [02.02.03.05 Creating copies of arrays](#02020305-Creating-copies-of-arrays)
     - [02.02.04 Reshaping of Arrays](#020204-Reshaping-of-Arrays)
+    - [02.02.05 Array Concatenation and Splitting](#020205-Array-Concatenation-and-Splitting)
+        - [02.02.05.01 Concatenation of arrays](#02020501-Concatenation-of-arrays)
+        - [02.02.05.02 Splitting of arrays](#02020502-Splitting-of-arrays)
 - [02.03 Computation on Numpy Arrays: Universal Functions](#0203-Computation-on-Numpy-Arrays-Universal-Functions)
 - [02.04 Aggregations: Min, Max, and Everything in Between](#0204-Aggregations-Min,-Max,-and-Everything-in-Between)
 - [02.05 Computation on Arrays: Broadcasting](#0405-Computation-on-Arrays-Broadcasting)
@@ -137,6 +140,29 @@ x.reshape((3, 1))
 # via newaxis
 x[:, np.newaxis]
 ```
+
+
+### 02.02.05 Array Concatenation and Splitting
+
+#### 02.02.05.01 Concatenation of arrays
+
+```py
+x = np.array([1, 2, 3])
+grid = np.array([[9, 8, 7], 
+                 [6, 5, 4]])
+np.vstack([x, grid])
+
+y = np.array([[99], 
+              [99]])
+np.hstack([grid, y])
+
+z = np.array([[-2, -1, 0], 
+              [-5, -4, -3]])
+np.dstack([grid, z])
+```
+
+#### 02.02.05.02 Splitting of arrays
+
 
 
 ## 
