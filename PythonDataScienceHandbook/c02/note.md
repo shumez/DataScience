@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-03-31 20:35:17
+Modified: 	2019-03-31 21:50:15
 -----
 Copyright (c) 2019 shumez
 -->
@@ -33,6 +33,10 @@ Copyright (c) 2019 shumez
         - [02.02.05.01 Concatenation of arrays](#02020501-Concatenation-of-arrays)
         - [02.02.05.02 Splitting of arrays](#02020502-Splitting-of-arrays)
 - [02.03 Computation on Numpy Arrays: Universal Functions](#0203-Computation-on-Numpy-Arrays-Universal-Functions)
+    - [02.03.01 The Slowness of Loops](#020301-The-Slowness-of-Loops)
+    - [02.03.02 Introducing UFuncs](#020302-Introducing-UFuncs)
+    - [02.03.03 Exploring NumPy's UFuncs](#020303-Exploring-NumPys-UFuncs)
+        - [02.03.03.01 Array arithmetic](#02030301-Array-arithmetic)
 - [02.04 Aggregations: Min, Max, and Everything in Between](#0204-Aggregations-Min,-Max,-and-Everything-in-Between)
 - [02.05 Computation on Arrays: Broadcasting](#0405-Computation-on-Arrays-Broadcasting)
 - [02.06 Comparisons, Masks, and Boolean Logic](#0406-Comparisons,-Masks,-and-Boolean-Logic)
@@ -162,6 +166,32 @@ np.dstack([grid, z])
 ```
 
 #### 02.02.05.02 Splitting of arrays
+
+## 02.03 Computation on NumPy Arrays: Universal Functions
+
+### 02.03.01 The Slowness of Loops
+
+CPython (Python's default implementation) very slowly
+
+- **PyPy**: just-in-time compiled implementation of Python
+- **Cython**: convert Python to C
+- **Numba**: convert Python to LLVM bytecode
+
+
+### 02.03.02 Introducing UFuncs
+
+NumPy are implemented via **ufunc**
+
+
+### 02.03.03 Exploring NumPy's UFuncs
+
+- **unary ufuncs**
+- **binary ufuncs**
+
+
+#### 02.03.03.01 Array arithmetic
+
+
 
 
 
