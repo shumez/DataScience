@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-01 17:53:53
+Modified: 	2019-04-01 19:44:40
 -----
 Copyright (c) 2019 shumez
 -->
@@ -58,6 +58,8 @@ Copyright (c) 2019 shumez
         - [02.05.02.01 Broadcasting example 1](#02050201-Broadcasting-example-1)
         - [02.05.02.02 Broadcasting example 2](#02050202-Broadcasting-example-2)
         - [02.05.02.03 Broadcasting example 3](#02050203-Broadcasting-example-3)
+    - [02.05.03 Broadcasting in Practice](#020503-Broadcasting-in-Practice)
+        - [02.05.03.01 Centering an array](#02050301-Centering-an-array)
 - [02.06 Comparisons, Masks, and Boolean Logic](#0206-Comparisons,-Masks,-and-Boolean-Logic)
 - [02.07 Fancy Indexing](#0207-Fancy-Indexing)
 - [02.08 Sorting Arrays](#0208-Sorting-Arrays)
@@ -310,6 +312,12 @@ M.min(axis=1)
 
 
 #### 02.05.02.03 Broadcasting example 3
+
+
+### 02.05.03 Broadcasting in Practice
+
+#### 02.05.03.01 Centering an array
+
 
 ## 
 
