@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-01 19:53:54
+Modified: 	2019-04-01 21:17:13
 -----
 Copyright (c) 2019 shumez
 -->
@@ -61,7 +61,10 @@ Copyright (c) 2019 shumez
     - [02.05.03 Broadcasting in Practice](#020503-Broadcasting-in-Practice)
         - [02.05.03.01 Centering an array](#02050301-Centering-an-array)
         - [02.05.03.02 Plotting a two-dimensional function](#02050302-Plotting-a-two-dimensional-function)
-- [02.06 Comparisons, Masks, and Boolean Logic](#0206-Comparisons,-Masks,-and-Boolean-Logic)
+- [02.06 Comparisons, Masks, and Boolean Logic](#0206-Comparisons-Masks-and-Boolean-Logic)
+    - [02.06.01 Example: Counting Rainy Days](#020601-Example-Counting-Rainy-Days)
+        - [02.06.01.01 Digging into the data](#02060101-Digging-into-the-data)
+    - [02.06.02 Comparison Operators as ufuncs](#020602-Comparison-Operators-as-ufuncs)
 - [02.07 Fancy Indexing](#0207-Fancy-Indexing)
 - [02.08 Sorting Arrays](#0208-Sorting-Arrays)
 - [02.09 Structured Data: NumPy's Structured Arrays](#0209-Structured-Data-NumPy's-Structured-Arrays)
@@ -320,6 +323,19 @@ M.min(axis=1)
 #### 02.05.03.01 Centering an array
 
 #### 02.05.03.02 Plotting a two-dimensional function
+
+
+## 02.06 Comparisons, Masks, and Boolean Logic
+
+### 02.06.01 Example: Counting Rainy Days
+
+#### 02.06.01.01 Digging into the data
+
+
+### 02.06.02 Comparison Operators as ufuncs
+
+
+
 
 ## 
 
