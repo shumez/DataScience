@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-01 15:19:5
+Modified: 	2019-04-01 15:41:0
 -----
 Copyright (c) 2019 shumez
 -->
@@ -51,6 +51,7 @@ Copyright (c) 2019 shumez
     - [02.04.02 Minimum and Maximum](#020402-Minimum-and-Maximum)
         - [02.04.02.01 Multidimensional aggregates](#02040201-Multidimensional-aggregates)
         - [02.04.02.02 Other aggregation functions](#02040202-Other-aggregation-functions)
+    - [02.04.03 Example: What Is the Average Height of US Presidents?](#020403-Example-What-Is-the-Average-Height-of-US-Presidents)
 - [02.05 Computation on Arrays: Broadcasting](#0405-Computation-on-Arrays-Broadcasting)
 - [02.06 Comparisons, Masks, and Boolean Logic](#0406-Comparisons,-Masks,-and-Boolean-Logic)
 - [02.07 Fancy Indexing](#0407-Fancy-Indexing)
@@ -286,6 +287,7 @@ M.min(axis=1)
 #### 02.04.02.02 Other aggregation functions
 
 
+### 02.04.03 Example: What Is the Average Height of US Presidents?
 
 
 ## 
