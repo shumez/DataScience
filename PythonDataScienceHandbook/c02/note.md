@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-01 16:48:15
+Modified: 	2019-04-01 17:47:59
 -----
 Copyright (c) 2019 shumez
 -->
@@ -54,6 +54,9 @@ Copyright (c) 2019 shumez
     - [02.04.03 Example: What Is the Average Height of US Presidents?](#020403-Example-What-Is-the-Average-Height-of-US-Presidents)
 - [02.05 Computation on Arrays: Broadcasting](#0205-Computation-on-Arrays-Broadcasting)
     - [02.05.01 Introducing Broadcasting](#020501-Introducing-Broadcasting)
+    - [02.05.02 Rules of Broadcasting](#020502-Rules-of-Broadcasting)
+        - [02.05.02.01 Broadcasting example 1](#02050201-Broadcasting-example-1)
+        - [02.05.02.02 Broadcasting example 2](#02050202-Broadcasting-example-2)
 - [02.06 Comparisons, Masks, and Boolean Logic](#0206-Comparisons,-Masks,-and-Boolean-Logic)
 - [02.07 Fancy Indexing](#0207-Fancy-Indexing)
 - [02.08 Sorting Arrays](#0208-Sorting-Arrays)
@@ -294,6 +297,16 @@ M.min(axis=1)
 ## 02.05 Computation on Arrays: Broadcasting
 
 ### 02.05.01 Introducing Broadcasting
+
+
+### 02.05.02 Rules of Broadcasting
+
+
+#### 02.05.02.01 Broadcasting example 1
+
+
+#### 02.05.02.02 Broadcasting example 2
+
 
 ## 
 
