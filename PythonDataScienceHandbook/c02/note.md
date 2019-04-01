@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-01 14:45:52
+Modified: 	2019-04-01 14:56:42
 -----
 Copyright (c) 2019 shumez
 -->
@@ -48,6 +48,7 @@ Copyright (c) 2019 shumez
     - [02.03.05 Ufuncs: Leanging More](#020305-Ufuncs-Leanging-More)
 - [02.04 Aggregations: Min, Max, and Everything in Between](#0204-Aggregations-Min-Max-and-Everything-in-Between)
     - [02.04.01 Summing the Values in an Array](#020401-Summing-the-Values-in-an-Array)
+    - [02.04.02 Minimum and Maximum](#020402-Minimum-and-Maximum)
 - [02.05 Computation on Arrays: Broadcasting](#0405-Computation-on-Arrays-Broadcasting)
 - [02.06 Comparisons, Masks, and Boolean Logic](#0406-Comparisons,-Masks,-and-Boolean-Logic)
 - [02.07 Fancy Indexing](#0407-Fancy-Indexing)
@@ -262,6 +263,13 @@ np.multiply.outer(x, x)
 ```py
 sum(x)
 np.sum(x)
+```
+
+### 02.04.02 Minimum and Maximum
+
+```py
+min(x)
+np.min(x)
 ```
 
 
