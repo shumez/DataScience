@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-01 11:43:30
+Modified: 	2019-04-01 11:54:43
 -----
 Copyright (c) 2019 shumez
 -->
@@ -235,7 +235,9 @@ y = np.zeros(n*2)
 
 #### 02.03.04.02 Aggregates
 
-
+```py
+np.add.reduce(x)
+```
 
 
 
