@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-01 11:06:58
+Modified: 	2019-04-01 11:43:30
 -----
 Copyright (c) 2019 shumez
 -->
@@ -41,6 +41,9 @@ Copyright (c) 2019 shumez
         - [02.03.03.03 Trigometric functions](#02030303-Trigometric-functions)
         - [02.03.03.04 Exponents and logarithms](#02030304-Exponents-and-logarithms)
         - [02.03.03.05 Specialized ufuncs](#02030305-Specialized-ufuncs)
+    - [02.03.04 Advanced Ufunc Features](#020304-Advanced-Ufunc-Features)
+        - [02.03.04.01 Specifying output](#02030401-Specifying-output)
+        - [02.03.04.02 Aggregates](#02030402-Aggregates)
 - [02.04 Aggregations: Min, Max, and Everything in Between](#0204-Aggregations-Min,-Max,-and-Everything-in-Between)
 - [02.05 Computation on Arrays: Broadcasting](#0405-Computation-on-Arrays-Broadcasting)
 - [02.06 Comparisons, Masks, and Boolean Logic](#0406-Comparisons,-Masks,-and-Boolean-Logic)
@@ -213,6 +216,28 @@ np.mod(x, 2)
 #### 02.03.03.04 Exponents and logarithms
 
 #### 02.03.03.05 Specialized ufuncs
+
+
+### 02.03.04 Advanced Ufunc Features
+
+#### 02.03.04.01 Specifying output
+
+```py
+n = 100000000
+x = np.arange(n)
+y = np.zeros(n*2)
+%timeit y[::2] = 2 ** x
+%timeit np.power(2, x, out=y[::2])
+```
+
+14.2 s ± 902 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+12.3 s ± 613 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+
+#### 02.03.04.02 Aggregates
+
+
+
+
 
 ## 
 
