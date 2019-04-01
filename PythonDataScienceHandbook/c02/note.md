@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-01 13:46:16
+Modified: 	2019-04-01 13:58:35
 -----
 Copyright (c) 2019 shumez
 -->
@@ -44,6 +44,7 @@ Copyright (c) 2019 shumez
     - [02.03.04 Advanced Ufunc Features](#020304-Advanced-Ufunc-Features)
         - [02.03.04.01 Specifying output](#02030401-Specifying-output)
         - [02.03.04.02 Aggregates](#02030402-Aggregates)
+        - [02.03.04.03 Outer products](#02030403-Outer-products)
 - [02.04 Aggregations: Min, Max, and Everything in Between](#0204-Aggregations-Min,-Max,-and-Everything-in-Between)
 - [02.05 Computation on Arrays: Broadcasting](#0405-Computation-on-Arrays-Broadcasting)
 - [02.06 Comparisons, Masks, and Boolean Logic](#0406-Comparisons,-Masks,-and-Boolean-Logic)
@@ -243,6 +244,11 @@ np.add.accumulate(x)
 np.multiply.accumulate(x)
 ```
 
+#### 02.03.04.03 Outer products
+
+```py
+np.multiply.outer(x, x)
+```
 
 
 ## 
