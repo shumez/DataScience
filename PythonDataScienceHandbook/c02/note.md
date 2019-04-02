@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-02 16:41:46
+Modified: 	2019-04-02 17:24:47
 -----
 Copyright (c) 2019 shumez
 -->
@@ -70,6 +70,7 @@ Copyright (c) 2019 shumez
         - [02.06.03.02 Boolean operators](#02060302-Boolean-operators)
     - [02.06.04 Boolean Arrays as Masks](#020604-Boolean-Arrays-as-Masks)
 - [02.07 Fancy Indexing](#0207-Fancy-Indexing)
+    - [02.07.01 Exploring Fancy Indexing](#020701-Exploring-Fancy-Indexing)
 - [02.08 Sorting Arrays](#0208-Sorting-Arrays)
 - [02.09 Structured Data: NumPy's Structured Arrays](#0209-Structured-Data-NumPy's-Structured-Arrays)
 
@@ -391,8 +392,48 @@ np.sum(x < 6, axis=1)
 x < 5
 
 x[x < 5]
+```
 
 
+## 02.07 Fancy Indexing
+
+- simple indices `arr[0]`
+- slices `arr[:5]`
+- Boolean masks `arr[arr > 0]`
+
+
+**fancy indexing**
+
+
+### 02.07.01 Exploring Fancy Indexing
+
+```py
+ind = np.array([[3, 7], 
+                [4, 5]])
+x[ind]
+> 
+[[71 86]
+ [60 20]]
+```
+
+```py
+X = np.arange(12).reshape((3, 4))
+row = np.array([0, 1, 2])
+col = np.array([2, 1, 3])
+
+X[row, col]
+> 
+[ 2  5 11]
+```
+
+
+```py
+X[row[:, np.newaxis], col]
+
+> 
+[[ 2  1  3]
+ [ 6  5  7]
+ [10  9 11]]
 ```
 
 
