@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-01 21:25:59
+Modified: 	2019-04-02 11:25:40
 -----
 Copyright (c) 2019 shumez
 -->
@@ -66,6 +66,7 @@ Copyright (c) 2019 shumez
         - [02.06.01.01 Digging into the data](#02060101-Digging-into-the-data)
     - [02.06.02 Comparison Operators as ufuncs](#020602-Comparison-Operators-as-ufuncs)
     - [02.06.03 Working with Boolean Arrays](#020603-Working-with-Boolean-Arrays)
+        - [02.06.03.01 Counting entries](#02060301-Counting-entries)
 - [02.07 Fancy Indexing](#0207-Fancy-Indexing)
 - [02.08 Sorting Arrays](#0208-Sorting-Arrays)
 - [02.09 Structured Data: NumPy's Structured Arrays](#0209-Structured-Data-NumPy's-Structured-Arrays)
@@ -337,6 +338,20 @@ M.min(axis=1)
 
 
 ### 02.06.03 Working with Boolean Arrays
+
+#### 02.06.03.01 Counting entries
+
+```py
+np.count_nonzero(x < 6)
+```
+
+```py
+np.sum(x < 6)
+```
+
+```py
+np.sum(x < 6, axis=1)
+```
 
 
 
