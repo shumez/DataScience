@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-02 11:25:40
+Modified: 	2019-04-02 15:30:0
 -----
 Copyright (c) 2019 shumez
 -->
@@ -67,6 +67,7 @@ Copyright (c) 2019 shumez
     - [02.06.02 Comparison Operators as ufuncs](#020602-Comparison-Operators-as-ufuncs)
     - [02.06.03 Working with Boolean Arrays](#020603-Working-with-Boolean-Arrays)
         - [02.06.03.01 Counting entries](#02060301-Counting-entries)
+        - [02.06.03.02 Boolean operators](#02060302-Boolean-operators)
 - [02.07 Fancy Indexing](#0207-Fancy-Indexing)
 - [02.08 Sorting Arrays](#0208-Sorting-Arrays)
 - [02.09 Structured Data: NumPy's Structured Arrays](#0209-Structured-Data-NumPy's-Structured-Arrays)
@@ -229,6 +230,17 @@ np.power(x, 2)
 np.mod(x, 2)
 ```
 
+| operator | ufunc           |
+|----------|-----------------|
+| +        | np.add          |
+| -        | np.subtract     |
+| -        | np.negative     |
+| *        | np.multiple     |
+| /        | np.divide       |
+| //       | np.floor_divide |
+| **       | np.power        |
+| %        | np.mod          |
+
 #### 02.03.03.02 Absolute value
 
 #### 02.03.03.03 Trigometric functions
@@ -336,6 +348,14 @@ M.min(axis=1)
 
 ### 02.06.02 Comparison Operators as ufuncs
 
+| operator | ufunc            |
+|----------|------------------|
+| ==       | np.equal         |
+| !=       | np.not_equal     |
+| <        | np.less          |
+| <=       | np.less_equal    |
+| >        | np.greater       |
+| >=       | np.greater_equal |
 
 ### 02.06.03 Working with Boolean Arrays
 
@@ -353,6 +373,15 @@ np.sum(x < 6)
 np.sum(x < 6, axis=1)
 ```
 
+
+#### 02.06.03.02 Boolean operators
+
+| operator  | ufunc             |
+|-----------|-------------------|
+| `&`	    | `np.bitwise_and`  |
+| `|`	    | `np.bitwise_or`   |
+| `^`	    | `np.bitwise_xor`  |
+| `~`	    | `np.bitwise_not`  |
 
 
 ## 
