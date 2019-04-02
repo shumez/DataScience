@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-02 15:30:0
+Modified: 	2019-04-02 16:41:46
 -----
 Copyright (c) 2019 shumez
 -->
@@ -68,6 +68,7 @@ Copyright (c) 2019 shumez
     - [02.06.03 Working with Boolean Arrays](#020603-Working-with-Boolean-Arrays)
         - [02.06.03.01 Counting entries](#02060301-Counting-entries)
         - [02.06.03.02 Boolean operators](#02060302-Boolean-operators)
+    - [02.06.04 Boolean Arrays as Masks](#020604-Boolean-Arrays-as-Masks)
 - [02.07 Fancy Indexing](#0207-Fancy-Indexing)
 - [02.08 Sorting Arrays](#0208-Sorting-Arrays)
 - [02.09 Structured Data: NumPy's Structured Arrays](#0209-Structured-Data-NumPy's-Structured-Arrays)
@@ -382,6 +383,19 @@ np.sum(x < 6, axis=1)
 | `|`	    | `np.bitwise_or`   |
 | `^`	    | `np.bitwise_xor`  |
 | `~`	    | `np.bitwise_not`  |
+
+
+### 02.06.04 Boolean Arrays as Masks
+
+```py
+x < 5
+
+x[x < 5]
+
+
+```
+
+
 
 
 ## 
