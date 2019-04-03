@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-02 17:26:26
+Modified: 	2019-04-03 11:34:40
 -----
 Copyright (c) 2019 shumez
 -->
@@ -72,6 +72,7 @@ Copyright (c) 2019 shumez
 - [02.07 Fancy Indexing](#0207-Fancy-Indexing)
     - [02.07.01 Exploring Fancy Indexing](#020701-Exploring-Fancy-Indexing)
     - [02.07.02 Combined Indexing](#020702-Combined-Indexing)
+    - [02.07.03 Example: Selecting Random Points](#020703-Example-Selecting-Random-Points)
 - [02.08 Sorting Arrays](#0208-Sorting-Arrays)
 - [02.09 Structured Data: NumPy's Structured Arrays](#0209-Structured-Data-NumPy's-Structured-Arrays)
 
@@ -440,6 +441,8 @@ X[row[:, np.newaxis], col]
 
 ### 02.07.02 Combined Indexing
 
+
+### 02.07.03 Example: Selecting Random Points
 
 
 
