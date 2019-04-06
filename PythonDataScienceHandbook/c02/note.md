@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/c02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-06 16:57:22
+Modified: 	2019-04-06 16:58:5
 -----
 Copyright (c) 2019 shumez
 -->
@@ -450,7 +450,7 @@ X[row[:, np.newaxis], col]
 ### 02.07.04 Modifying Values with Fancy Indexing
 
 
-
+### 02.07.05 Example: Binning Data
 
 
 ## 
