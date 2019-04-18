@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-18 17:10:8
+Modified: 	2019-04-18 17:14:54
 -----
 Copyright (c) 2019 shumez
 -->
@@ -79,11 +79,11 @@ Copyright (c) 2019 shumez
 * [02.09. Structured Data: NumPy's Structured Arrays](#0209_Structured_Data_NumPys_Structured_Arrays)
 
 
-## 02.01 Understanding Data Types in Python
+## 02.01. Understanding Data Types in Python
 
-### 02.01.01 A Python Interger Is More Than Just an Integer
+### 02.01.01. A Python Interger Is More Than Just an Integer
 
-### 02.01.02 A Python List Is More Than Just a List
+### 02.01.02. A Python List Is More Than Just a List
 
 ```py
 L = list(range(10))
@@ -93,7 +93,7 @@ L = list(range(10))
 L2 = [str(c) for c in L]
 ```
 
-### 02.01.03 Fixed-Type Arrays in Python
+### 02.01.03. Fixed-Type Arrays in Python
 
 ```py
 import array
@@ -101,15 +101,15 @@ L = list(range(10))
 A = array.array('i', L)
 ```
 
-### 02.01.04 Creating Arrays from Python Lists
+### 02.01.04. Creating Arrays from Python Lists
 
-### 02.01.05 Creating Arrays from Scratch
-
-
-### 02.01.06 NumPy Standard Data Types
+### 02.01.05. Creating Arrays from Scratch
 
 
-## 02.02 The Basics of Numpy Arrays
+### 02.01.06. NumPy Standard Data Types
+
+
+## 02.02. The Basics of Numpy Arrays
 
 - Attributes of arrays
 - Indexing of arrays
@@ -118,13 +118,13 @@ A = array.array('i', L)
 - Joining and splitting of arrays
 
 
-### 02.02.01 NumPy Array Attributes
+### 02.02.01. NumPy Array Attributes
 
 
-### 02.02.02 Array Indexing: Accessing Single Elements
+### 02.02.02. Array Indexing: Accessing Single Elements
 
 
-### 02.02.03 Array Slicing: Accessing Subarrays
+### 02.02.03. Array Slicing: Accessing Subarrays
 
 ```py
 x[start:stop:step]
@@ -169,7 +169,7 @@ x2_sub_copy = x2[:2, :2].copy()
 original array is NOT changed
 
 
-### 02.02.04 Reshaping of Arrays
+### 02.02.04. Reshaping of Arrays
 
 ```py
 # via reshape
@@ -180,9 +180,9 @@ x[:, np.newaxis]
 ```
 
 
-### 02.02.05 Array Concatenation and Splitting
+### 02.02.05. Array Concatenation and Splitting
 
-#### 02.02.05.01 Concatenation of arrays
+#### 02.02.05.01. Concatenation of arrays
 
 ```py
 x = np.array([1, 2, 3])
@@ -199,11 +199,11 @@ z = np.array([[-2, -1, 0],
 np.dstack([grid, z])
 ```
 
-#### 02.02.05.02 Splitting of arrays
+#### 02.02.05.02. Splitting of arrays
 
-## 02.03 Computation on NumPy Arrays: Universal Functions
+## 02.03. Computation on NumPy Arrays: Universal Functions
 
-### 02.03.01 The Slowness of Loops
+### 02.03.01. The Slowness of Loops
 
 CPython (Python's default implementation) very slowly
 
@@ -212,18 +212,18 @@ CPython (Python's default implementation) very slowly
 - **Numba**: convert Python to LLVM bytecode
 
 
-### 02.03.02 Introducing UFuncs
+### 02.03.02. Introducing UFuncs
 
 NumPy are implemented via **ufunc**
 
 
-### 02.03.03 Exploring NumPy's UFuncs
+### 02.03.03. Exploring NumPy's UFuncs
 
 - **unary ufuncs**
 - **binary ufuncs**
 
 
-#### 02.03.03.01 Array arithmetic
+#### 02.03.03.01. Array arithmetic
 
 ```py
 np.add(x, 5)
@@ -247,18 +247,18 @@ np.mod(x, 2)
 | **       | np.power        |
 | %        | np.mod          |
 
-#### 02.03.03.02 Absolute value
+#### 02.03.03.02. Absolute value
 
-#### 02.03.03.03 Trigometric functions
+#### 02.03.03.03. Trigometric functions
 
-#### 02.03.03.04 Exponents and logarithms
+#### 02.03.03.04. Exponents and logarithms
 
-#### 02.03.03.05 Specialized ufuncs
+#### 02.03.03.05. Specialized ufuncs
 
 
-### 02.03.04 Advanced Ufunc Features
+### 02.03.04. Advanced Ufunc Features
 
-#### 02.03.04.01 Specifying output
+#### 02.03.04.01. Specifying output
 
 ```py
 n = 100000000
@@ -271,7 +271,7 @@ y = np.zeros(n*2)
 14.2 s ± 902 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 12.3 s ± 613 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
-#### 02.03.04.02 Aggregates
+#### 02.03.04.02. Aggregates
 
 ```py
 np.add.reduce(x)
@@ -281,7 +281,7 @@ np.add.accumulate(x)
 np.multiply.accumulate(x)
 ```
 
-#### 02.03.04.03 Outer products
+#### 02.03.04.03. Outer products
 
 ```py
 np.multiply.outer(x, x)
@@ -290,23 +290,23 @@ np.multiply.outer(x, x)
 ### 02.03.05 Ufuncs: Leanging More
 
 
-## 02.04 Aggregations: Min, Max, and Everything in Between
+## 02.04. Aggregations: Min, Max, and Everything in Between
 
-### 02.04.01 Summing the Values in an Array
+### 02.04.01. Summing the Values in an Array
 
 ```py
 sum(x)
 np.sum(x)
 ```
 
-### 02.04.02 Minimum and Maximum
+### 02.04.02. Minimum and Maximum
 
 ```py
 min(x)
 np.min(x)
 ```
 
-#### 02.04.02.01 Multidimensional aggregates
+#### 02.04.02.01. Multidimensional aggregates
 
 ```py
 M.sum(axis=0)
@@ -315,44 +315,44 @@ M.min(axis=1)
 ```
 
 
-#### 02.04.02.02 Other aggregation functions
+#### 02.04.02.02. Other aggregation functions
 
 
-### 02.04.03 Example: What Is the Average Height of US Presidents?
+### 02.04.03. Example: What Is the Average Height of US Presidents?
 
 
-## 02.05 Computation on Arrays: Broadcasting
+## 02.05. Computation on Arrays: Broadcasting
 
-### 02.05.01 Introducing Broadcasting
-
-
-### 02.05.02 Rules of Broadcasting
+### 02.05.01. Introducing Broadcasting
 
 
-#### 02.05.02.01 Broadcasting example 1
+### 02.05.02. Rules of Broadcasting
 
 
-#### 02.05.02.02 Broadcasting example 2
+#### 02.05.02.01. Broadcasting example 1
 
 
-#### 02.05.02.03 Broadcasting example 3
+#### 02.05.02.02. Broadcasting example 2
 
 
-### 02.05.03 Broadcasting in Practice
-
-#### 02.05.03.01 Centering an array
-
-#### 02.05.03.02 Plotting a two-dimensional function
+#### 02.05.02.03. Broadcasting example 3
 
 
-## 02.06 Comparisons, Masks, and Boolean Logic
+### 02.05.03. Broadcasting in Practice
 
-### 02.06.01 Example: Counting Rainy Days
+#### 02.05.03.01. Centering an array
 
-#### 02.06.01.01 Digging into the data
+#### 02.05.03.02. Plotting a two-dimensional function
 
 
-### 02.06.02 Comparison Operators as ufuncs
+## 02.06. Comparisons, Masks, and Boolean Logic
+
+### 02.06.01. Example: Counting Rainy Days
+
+#### 02.06.01.01. Digging into the data
+
+
+### 02.06.02. Comparison Operators as ufuncs
 
 | operator | ufunc            |
 |----------|------------------|
@@ -363,9 +363,9 @@ M.min(axis=1)
 | >        | np.greater       |
 | >=       | np.greater_equal |
 
-### 02.06.03 Working with Boolean Arrays
+### 02.06.03. Working with Boolean Arrays
 
-#### 02.06.03.01 Counting entries
+#### 02.06.03.01. Counting entries
 
 ```py
 np.count_nonzero(x < 6)
@@ -380,7 +380,7 @@ np.sum(x < 6, axis=1)
 ```
 
 
-#### 02.06.03.02 Boolean operators
+#### 02.06.03.02. Boolean operators
 
 | operator  | ufunc             |
 |-----------|-------------------|
@@ -390,7 +390,7 @@ np.sum(x < 6, axis=1)
 | `~`	    | `np.bitwise_not`  |
 
 
-### 02.06.04 Boolean Arrays as Masks
+### 02.06.04. Boolean Arrays as Masks
 
 ```py
 x < 5
@@ -399,7 +399,7 @@ x[x < 5]
 ```
 
 
-## 02.07 Fancy Indexing
+## 02.07. Fancy Indexing
 
 - simple indices `arr[0]`
 - slices `arr[:5]`
@@ -409,7 +409,7 @@ x[x < 5]
 **fancy indexing**
 
 
-### 02.07.01 Exploring Fancy Indexing
+### 02.07.01. Exploring Fancy Indexing
 
 ```py
 ind = np.array([[3, 7], 
@@ -441,16 +441,16 @@ X[row[:, np.newaxis], col]
 ```
 
 
-### 02.07.02 Combined Indexing
+### 02.07.02. Combined Indexing
 
 
-### 02.07.03 Example: Selecting Random Points
+### 02.07.03. Example: Selecting Random Points
 
 
-### 02.07.04 Modifying Values with Fancy Indexing
+### 02.07.04. Modifying Values with Fancy Indexing
 
 
-### 02.07.05 Example: Binning Data
+### 02.07.05. Example: Binning Data
 
 
 ## 
