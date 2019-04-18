@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-18 17:14:54
+Modified: 	2019-04-18 18:10:54
 -----
 Copyright (c) 2019 shumez
 -->
@@ -75,7 +75,7 @@ Copyright (c) 2019 shumez
     * [02.07.03. Example: Selecting Random Points](#020703_Example_Selecting_Random_Points)
     * [02.07.04. Modifying Values with Fancy Indexing](#020704_Modifying_Values_with_Fancy_Indexing)
     * [02.07.05. Example: Binning Data](#020705_Example_Binning_Data)
-* [02.08. Sorting Arrays](#0208_Sorting_Arrays)
+* [02.08. Sorting Arrays](#0208_sorting_arrays)
 * [02.09. Structured Data: NumPy's Structured Arrays](#0209_Structured_Data_NumPys_Structured_Arrays)
 
 
@@ -451,6 +451,10 @@ X[row[:, np.newaxis], col]
 
 
 ### 02.07.05. Example: Binning Data
+
+
+## 02.08. Sorting Arrays
+
 
 
 ## 
