@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-04-18 18:10:54
+Modified: 	2019-05-08 16:01:27
 -----
 Copyright (c) 2019 shumez
 -->
@@ -12,13 +12,13 @@ Copyright (c) 2019 shumez
 
 ## Contents
 
-* [02.01. Understanding Data Types in Python](#0201_Understanding_Data_Types_in_Python)
-    * [02.01.01. A Python Interger Is More Than Just an Integer](#020101_A_Python_Interger_Is_More_Than_Just_an_Integer)
-    * [02.01.02. A Python List Is More Than Just a List](#020102_A_Python_List_Is_More_Than_Just_a_List)
-    * [02.01.03. Fixed-Type Arrays in Python](#020103_Fixed-Type_Arrays_in_Python)
-    * [02.01.04. Creating Arrays from Python Lists](#020104_Creating_Arrays_from_Python_Lists)
-    * [02.01.05. Creating Arrays from Scratch](#020105_Creating_Arrays_from_Scratch)
-    * [02.01.06. NumPy Standard Data Types](#020106_NumPy_Standard_Data_Types)
+* [02.01. Understanding Data Types in Python](#0201_understanding_data_types_in_python)
+    * [02.01.01. A Python Interger Is More Than Just an Integer](#020101_a_python_interger_is_more_than_just_an_integer)
+    * [02.01.02. A Python List Is More Than Just a List](#020102_a_python_list_is_more_than_just_a_list)
+    * [02.01.03. Fixed-Type Arrays in Python](#020103_fixed-type_arrays_in_python)
+    * [02.01.04. Creating Arrays from Python Lists](#020104_creating_arrays_from_python_lists)
+    * [02.01.05. Creating Arrays from Scratch](#020105_creating_arrays_from_scratch)
+    * [02.01.06. NumPy Standard Data Types](#020106_numpy_standard_data_types)
 * [02.02. The Basics of Numpy Arrays](#0202_The_Basics_of_Numpy_Arrays)
     * [02.02.01. NumPy Array Attributes](#020201_NumPy_Array_Attributes)
     * [02.02.02. Array Indexing: Accessing Single Elements](#020202_Array_Indexing_Accessing_Single_Elements)
@@ -76,6 +76,9 @@ Copyright (c) 2019 shumez
     * [02.07.04. Modifying Values with Fancy Indexing](#020704_Modifying_Values_with_Fancy_Indexing)
     * [02.07.05. Example: Binning Data](#020705_Example_Binning_Data)
 * [02.08. Sorting Arrays](#0208_sorting_arrays)
+    * [02.08.01. Fast Sorting in Numpy: np.sort and np.argsort](#020801_fast_sorting_in_numpy_npsort_and_npargsort)
+        * [02.08.01.01. Sorting along rows or columns](#02080101_sorting_along_rows_or_columns)
+    * [02.08.02. Partial Sorts: Partitioning](#020802_partial_sorts_partitioning)
 * [02.09. Structured Data: NumPy's Structured Arrays](#0209_Structured_Data_NumPys_Structured_Arrays)
 
 
@@ -455,6 +458,53 @@ X[row[:, np.newaxis], col]
 
 ## 02.08. Sorting Arrays
 
+```py
+def selection_sort(x):
+    for i in range(len(x)):
+        swap = i + np.argmin(x[i:])
+        (x[i], x[swap]) = (x[swap], x[i])
+    return x
+```
+
+```py
+def bogosort(x):
+    while np.any(x[:-1] > x[1:]):
+        np.random.shuffle(x)
+    return x
+```
+
+### 02.08.01. Fast Sorting in Numpy: np.sort and np.argsort
+
+```py
+np.sort(x)
+```
+
+```py
+x.sort()
+```
+
+```py
+x = np.array([2, 1, 4, 3, 5])
+i = np.argsort(x)
+x[i]
+```
+
+#### 02.08.01.01. Sorting along rows or columns
+
+```py
+rand = np.random.RandomState(42)
+X = rand.randint(0, 10, (4, 6))
+```
+
+```py
+np.sort(X, axis=0)
+```
+
+```py
+np.sort(X, axis=1)
+```
+
+### 02.08.02. Partial Sorts: Partitioning
 
 
 ## 
