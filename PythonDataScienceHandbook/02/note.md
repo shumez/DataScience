@@ -3,36 +3,36 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/PythonDataScienceHandbook/02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-30 16:01:3
-Modified: 	2019-05-08 16:01:27
+Modified: 	2019-05-29 15:59:24
 -----
 Copyright (c) 2019 shumez
 -->
 
 # 02. Introduction to Numpy
 
-## Contents
+## ToC
 
-* [02.01. Understanding Data Types in Python](#0201_understanding_data_types_in_python)
-    * [02.01.01. A Python Interger Is More Than Just an Integer](#020101_a_python_interger_is_more_than_just_an_integer)
-    * [02.01.02. A Python List Is More Than Just a List](#020102_a_python_list_is_more_than_just_a_list)
-    * [02.01.03. Fixed-Type Arrays in Python](#020103_fixed-type_arrays_in_python)
-    * [02.01.04. Creating Arrays from Python Lists](#020104_creating_arrays_from_python_lists)
-    * [02.01.05. Creating Arrays from Scratch](#020105_creating_arrays_from_scratch)
-    * [02.01.06. NumPy Standard Data Types](#020106_numpy_standard_data_types)
-* [02.02. The Basics of Numpy Arrays](#0202_The_Basics_of_Numpy_Arrays)
-    * [02.02.01. NumPy Array Attributes](#020201_NumPy_Array_Attributes)
-    * [02.02.02. Array Indexing: Accessing Single Elements](#020202_Array_Indexing_Accessing_Single_Elements)
-    * [02.02.03. Array Slicing: Accessing Subarrays](#020203_Array_Slicing_Accessing_Subarrays)
-        * [02.02.03.01. One-dimensional subarrays](#02020301_One-dimensional_subarrays)
-        * [02.02.03.02. Multidimensional subarrays](#02020302_Multidimensional_subarrays)
-        * [02.02.03.03. Accessing array rows and columns](#02020303_Accessing_array_rows_and_columns)
-        * [02.02.03.04. Subarrays as no-copy views](#02020304_Subarrays_as_no-copy_views)
-        * [02.02.03.05. Creating copies of arrays](#02020305_Creating_copies_of_arrays)
-    * [02.02.04. Reshaping of Arrays](#020204_Reshaping_of_Arrays)
-    * [02.02.05. Array Concatenation and Splitting](#020205_Array_Concatenation_and_Splitting)
-        * [02.02.05.01. Concatenation of arrays](#02020501_Concatenation_of_arrays)
-        * [02.02.05.02. Splitting of arrays](#02020502_Splitting_of_arrays)
-* [02.03. Computation on Numpy Arrays: Universal Functions](#0203_Computation_on_Numpy_Arrays_Universal_Functions)
+* [02.01. Understanding Data Types in Python][0201]
+    * [02.01.01. A Python Interger Is More Than Just an Integer][020101]
+    * [02.01.02. A Python List Is More Than Just a List][020102]
+    * [02.01.03. Fixed-Type Arrays in Python][020103]
+    * [02.01.04. Creating Arrays from Python Lists][020104]
+    * [02.01.05. Creating Arrays from Scratch][020105]
+    * [02.01.06. NumPy Standard Data Types][020106]
+* [02.02. The Basics of Numpy Arrays][0202]
+    * [02.02.01. NumPy Array Attributes][020201]
+    * [02.02.02. Array Indexing: Accessing Single Elements][020202]
+    * [02.02.03. Array Slicing: Accessing Subarrays][020203]
+        * [02.02.03.01. One-dimensional subarrays][02020301]
+        * [02.02.03.02. Multidimensional subarrays][02020302]
+        * [02.02.03.03. Accessing array rows and columns][02020303]
+        * [02.02.03.04. Subarrays as no-copy views][02020304]
+        * [02.02.03.05. Creating copies of arrays][02020305]
+    * [02.02.04. Reshaping of Arrays][020204]
+    * [02.02.05. Array Concatenation and Splitting][020205]
+        * [02.02.05.01. Concatenation of arrays][02020501]
+        * [02.02.05.02. Splitting of arrays][02020502]
+* [02.03. Computation on Numpy Arrays: Universal Functions][0203]
     * [02.03.01. The Slowness of Loops](#020301_The_Slowness_of_Loops)
     * [02.03.02. Introducing UFuncs](#020302_Introducing_UFuncs)
     * [02.03.03. Exploring NumPy's UFuncs](#020303_Exploring_NumPys_UFuncs)
@@ -46,13 +46,13 @@ Copyright (c) 2019 shumez
         * [02.03.04.02. Aggregates](#02030402_Aggregates)
         * [02.03.04.03. Outer products](#02030403_Outer_products)
     * [02.03.05. Ufuncs: Leanging More](#020305_Ufuncs_Leanging_More)
-* [02.04. Aggregations: Min, Max, and Everything in Between](#0204_Aggregations_Min_Max_and_Everything_in_Between)
+* [02.04. Aggregations: Min, Max, and Everything in Between][0204]
     * [02.04.01. Summing the Values in an Array](#020401_Summing_the_Values_in_an_Array)
     * [02.04.02. Minimum and Maximum](#020402_Minimum_and_Maximum)
         * [02.04.02.01. Multidimensional aggregates](#02040201_Multidimensional_aggregates)
         * [02.04.02.02. Other aggregation functions](#02040202_Other_aggregation_functions)
     * [02.04.03. Example: What Is the Average Height of US Presidents?](#020403_Example_What_Is_the_Average_Height_of_US_Presidents)
-* [02.05. Computation on Arrays: Broadcasting](#0205_Computation_on_Arrays_Broadcasting)
+* [02.05. Computation on Arrays: Broadcasting][0205]
     * [02.05.01. Introducing Broadcasting](#020501_Introducing_Broadcasting)
     * [02.05.02. Rules of Broadcasting](#020502_Rules_of_Broadcasting)
         * [02.05.02.01. Broadcasting example 1](#02050201_Broadcasting_example_1)
@@ -61,7 +61,7 @@ Copyright (c) 2019 shumez
     * [02.05.03. Broadcasting in Practice](#020503_Broadcasting_in_Practice)
         * [02.05.03.01. Centering an array](#02050301_Centering_an_array)
         * [02.05.03.02. Plotting a two-dimensional function](#02050302_Plotting_a_two-dimensional_function)
-* [02.06. Comparisons, Masks, and Boolean Logic](#0206_Comparisons_Masks_and_Boolean_Logic)
+* [02.06. Comparisons, Masks, and Boolean Logic][0206]
     * [02.06.01. Example: Counting Rainy Days](#020601_Example_Counting_Rainy_Days)
         * [02.06.01.01. Digging into the data](#02060101_Digging_into_the_data)
     * [02.06.02. Comparison Operators as ufuncs](#020602_Comparison_Operators_as_ufuncs)
@@ -69,17 +69,17 @@ Copyright (c) 2019 shumez
         * [02.06.03.01. Counting entries](#02060301_Counting_entries)
         * [02.06.03.02. Boolean operators](#02060302_Boolean_operators)
     * [02.06.04. Boolean Arrays as Masks](#020604_Boolean_Arrays_as_Masks)
-* [02.07. Fancy Indexing](#0207_Fancy_Indexing)
+* [02.07. Fancy Indexing][0207]
     * [02.07.01. Exploring Fancy Indexing](#020701_Exploring_Fancy_Indexing)
     * [02.07.02. Combined Indexing](#020702_Combined_Indexing)
     * [02.07.03. Example: Selecting Random Points](#020703_Example_Selecting_Random_Points)
     * [02.07.04. Modifying Values with Fancy Indexing](#020704_Modifying_Values_with_Fancy_Indexing)
     * [02.07.05. Example: Binning Data](#020705_Example_Binning_Data)
-* [02.08. Sorting Arrays](#0208_sorting_arrays)
+* [02.08. Sorting Arrays][0208]
     * [02.08.01. Fast Sorting in Numpy: np.sort and np.argsort](#020801_fast_sorting_in_numpy_npsort_and_npargsort)
         * [02.08.01.01. Sorting along rows or columns](#02080101_sorting_along_rows_or_columns)
     * [02.08.02. Partial Sorts: Partitioning](#020802_partial_sorts_partitioning)
-* [02.09. Structured Data: NumPy's Structured Arrays](#0209_Structured_Data_NumPys_Structured_Arrays)
+* [02.09. Structured Data: NumPy's Structured Arrays][0209]
 
 
 ## 02.01. Understanding Data Types in Python
@@ -508,9 +508,41 @@ np.sort(X, axis=1)
 
 
 ## 
+<!-- tof -->
+[0201]: #0201_understanding_data_types_in_python
+[020101]: #020101_a_python_interger_is_more_than_just_an_integer
+[020102]: #020102_a_python_list_is_more_than_just_a_list
+[020103]: #020103_fixed-type_arrays_in_python
+[020104]: #020104_creating_arrays_from_python_lists
+[020105]: #020105_creating_arrays_from_scratch
+[020106]: #020106_numpy_standard_data_types
+[0202]: #0202_the_basics_of_numpy_arrays
+[020201]: #020201_NumPy_Array_Attributes
+[020202]: #020202_Array_Indexing_Accessing_Single_Elements
+[020203]: #020203_Array_Slicing_Accessing_Subarrays
+[02020301]: #02020301_One-dimensional_subarrays
+[02020302]: #02020302_Multidimensional_subarrays
+[02020303]: #02020303_Accessing_array_rows_and_columns
+[02020304]: #02020304_Subarrays_as_no-copy_views
+[02020305]: #02020305_Creating_copies_of_arrays
+[020204]: #020204_Reshaping_of_Arrays
+[020205]: #020205_Array_Concatenation_and_Splitting
+[02020501]: #02020501_Concatenation_of_arrays
+[02020502]: #02020502_Splitting_of_arrays
 
-[x+\frac{1}{x}=1]: https://latex.codecogs.com/gif.latex?\inline&space;x+\frac{1}{x}=1
-<!-- [x+\frac{1}{x}=1]: https://latex.codecogs.com/gif.latex?x+\frac{1}{x}=1 -->
+[0203]: #0203_computation_on_numpy_arrays_universal_functions
+
+[0204]: #0204_aggregations_min_max_and_everything_in_between
+
+[0205]: #0205_computation_on_arrays_broadcasting
+
+[0206]: #0206_comparisons_masks_and_boolean_logic
+
+[0207]: #0207_fancy_indexing
+
+[0208]: #0208_sorting_arrays
+
+[0209]: #0209_structured_data_numpys_structured_arrays
 
 <!-- <style type="text/css">
 	img{width: 50%; float: right;}
