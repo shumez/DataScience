@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/DoingDataScience/02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-08-07 15:41:3
-Modified: 	2019-08-07 16:56:43
+Modified: 	2019-08-07 17:10:12
 -----
 Copyright (c) 2019 shumez
 -->
@@ -39,6 +39,14 @@ Copyright (c) 2019 shumez
 extract meaning and info from data
 
 ### 02.01.02. Populations and Samples
+
+**population**
+
+**observation** \(N\)
+
+**sample**
+
+
 ### 02.01.03. Populations and Samples of Big Data
 ### 02.01.04. Big Data Can Mean Big Assumptions
 ### 02.01.05. Modeling
