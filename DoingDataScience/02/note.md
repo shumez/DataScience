@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/DoingDataScience/02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-08-07 15:41:3
-Modified: 	2019-08-07 16:09:9
+Modified: 	2019-08-07 16:56:43
 -----
 Copyright (c) 2019 shumez
 -->
@@ -33,6 +33,11 @@ Copyright (c) 2019 shumez
 
 
 ### 02.01.01. Statistical Inference
+
+**statistical inference**
+
+extract meaning and info from data
+
 ### 02.01.02. Populations and Samples
 ### 02.01.03. Populations and Samples of Big Data
 ### 02.01.04. Big Data Can Mean Big Assumptions
