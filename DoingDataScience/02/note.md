@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/DoingDataScience/02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-08-07 15:41:3
-Modified: 	2019-08-07 19:36:28
+Modified: 	2019-08-07 20:32:40
 -----
 Copyright (c) 2019 shumez
 -->
@@ -47,6 +47,43 @@ extract meaning and info from data
 **sample** \(n\)
 
 ### 02.01.03. Populations and Samples of Big Data
+
+*sampling solves some engineering challenges*
+
+*bias*
+
+*sampling*
+
+*new kinds of data*
+
+- numerical, categorical, binary
+- text
+- record 
+    - user-level data
+    - timestamped event data
+    - json-formatted log files
+- geo-based location data
+- network
+- sensor data
+- images
+
+
+###### Terminology: Big Data
+
+"Big" is a moving target
+
+"Big" is when you can't fit it on one machine
+
+Big Data is a cultural phenomenon
+
+4 Vs:
+
+- Volume
+- Variety
+- Velocity
+- Value
+
+
 ### 02.01.04. Big Data Can Mean Big Assumptions
 ### 02.01.05. Modeling
 ## 02.02. Eploratory Data Analysis
