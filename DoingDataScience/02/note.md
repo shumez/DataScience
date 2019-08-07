@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/DoingDataScience/02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-08-07 15:41:3
-Modified: 	2019-08-07 20:32:40
+Modified: 	2019-08-07 20:43:51
 -----
 Copyright (c) 2019 shumez
 -->
@@ -85,6 +85,12 @@ Big Data is a cultural phenomenon
 
 
 ### 02.01.04. Big Data Can Mean Big Assumptions
+
+\(N=\text{ALL}\)
+
+###### Can \(N=\text{ALL}\)?
+
+
 ### 02.01.05. Modeling
 ## 02.02. Eploratory Data Analysis
 ### 02.02.01. Philosophy of Exploratory Data Analysis
