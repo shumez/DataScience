@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/DoingDataScience/02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-08-07 15:41:3
-Modified: 	2019-08-07 15:56:59
+Modified: 	2019-08-07 16:09:9
 -----
 Copyright (c) 2019 shumez
 -->
@@ -30,6 +30,8 @@ Copyright (c) 2019 shumez
 
 
 ## 02.01. Statistical Thinking in the Age of Big Data
+
+
 ### 02.01.01. Statistical Inference
 ### 02.01.02. Populations and Samples
 ### 02.01.03. Populations and Samples of Big Data
