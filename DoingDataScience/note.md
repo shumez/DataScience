@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/DoingDataScience
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-03-29 12:32:7
-Modified: 	2019-03-29 12:42:48
+Modified: 	2019-08-07 15:16:28
 -----
 Copyright (c) 2019 shumez
 -->
@@ -12,19 +12,20 @@ Copyright (c) 2019 shumez
 
 ## Contents
 
-1. [...](#)
-    1. [...](#)
+- [01. Introduction: What is Data Science?][01]
+- [02. Statistial Inference, Exploratory Data Analysis, and the Data Science Process][02]
+- [03. Algorithms][03]
 
 
 ## 
 
-![][x+\frac{1}{x}=1]
 
 
 
+##
 
-[x+\frac{1}{x}=1]: https://latex.codecogs.com/gif.latex?\inline&space;x+\frac{1}{x}=1
-<!-- [x+\frac{1}{x}=1]: https://latex.codecogs.com/gif.latex?x+\frac{1}{x}=1 -->
+<!-- toc -->
+[01]: 01/index.md
 
 <!-- <style type="text/css">
 	img{width: 50%; float: right;}
