@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>02. Statistial Inference, Exploratory Data Analysis, and the Data Science Process - Data Science</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "02. Statistial Inference, Exploratory Data Analysis, and the Data Science Process";
+    var mkdocs_page_input_path = "DoingDataScience/02/index.md";
+    var mkdocs_page_url = "/DoingDataScience/02/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Data Science</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Doing Data Science</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Intro</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../01/">01. Introduction: What is Data Science?</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">02. Statistial Inference, Exploratory Data Analysis, and the Data Science Process</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#contents">Contents</a></li>
+    
+
+    <li class="toctree-l3"><a href="#0201_statistical_thinking_in_the_age_of_big_data">02.01. Statistical Thinking in the Age of Big Data</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#020101_statistical_inference">02.01.01. Statistical Inference</a></li>
+        
+            <li><a class="toctree-l4" href="#020102_populations_and_samples">02.01.02. Populations and Samples</a></li>
+        
+            <li><a class="toctree-l4" href="#020103_populations_and_samples_of_big_data">02.01.03. Populations and Samples of Big Data</a></li>
+        
+            <li><a class="toctree-l4" href="#020104_big_data_can_mean_big_assumptions">02.01.04. Big Data Can Mean Big Assumptions</a></li>
+        
+            <li><a class="toctree-l4" href="#020105_modeling">02.01.05. Modeling</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#0202_eploratory_data_analysis">02.02. Eploratory Data Analysis</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#020201_philosophy_of_exploratory_data_analysis">02.02.01. Philosophy of Exploratory Data Analysis</a></li>
+        
+            <li><a class="toctree-l4" href="#020202_exercise_eda">02.02.02. Exercise: EDA</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#0203_the_data_science_process">02.03. The Data Science Process</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#020301_a_data_scientists_role_in_this_process">02.03.01. A Data Scientist's Role in This Process</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#0204_thought_experiment_how_would_you_simulate_chaos">02.04. Thought Experiment: How Would You Simulate Chaos?</a></li>
+    
+
+    <li class="toctree-l3"><a href="#0205_case_study_realdirect">02.05. Case Study: RealDirect</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#020501_how_does_realdirect_make_money">02.05.01. How Does RealDirect Make Money?</a></li>
+        
+            <li><a class="toctree-l4" href="#020502_exercise_realdirect_data_strategy">02.05.02. Exercise: RealDirect Data Strategy</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Python Data Science Handbook</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../PythonDataScienceHandbook/">Intro</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../PythonDataScienceHandbook/02/">02</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">R for Data Science</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../RForDataScience/">Intro</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Data Science</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Doing Data Science &raquo;</li>
+        
+      
+    
+    <li>02. Statistial Inference, Exploratory Data Analysis, and the Data Science Process</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <!--
+Filename:   note.md
+Project:    /Users/shume/Developer/DataScience/DoingDataScience/02
+Author:     shumez <https://github.com/shumez>
+Created:    2019-08-07 15:41:3
+Modified:   2019-08-07 17:10:12
+-----
+Copyright (c) 2019 shumez
+-->
+
+<h1 id="02_statistial_inference_exploratory_data_analysis_and_the_data_science_process">02. Statistial Inference, Exploratory Data Analysis, and the Data Science Process<a class="headerlink" href="#02_statistial_inference_exploratory_data_analysis_and_the_data_science_process" title="Permanent link">&para;</a></h1>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#0201_statistical_thinking_in_the_age_of_big_data">02.01. Statistical Thinking in the Age of Big Data</a><ul>
+<li><a href="#020101_statistical_inference">02.01.01. Statistical Inference</a></li>
+<li><a href="#020102_populations_and_samples">02.01.02. Populations and Samples</a></li>
+<li><a href="#020103_populations_and_samples_of_big_data">02.01.03. Populations and Samples of Big Data</a></li>
+<li><a href="#020104_big_data_can_mean_big_assumptions">02.01.04. Big Data Can Mean Big Assumptions</a></li>
+<li><a href="#020105_modeling">02.01.05. Modeling</a></li>
+</ul>
+</li>
+<li><a href="#0202_eploratory_data_analysis">02.02. Eploratory Data Analysis</a><ul>
+<li><a href="#020201_philosophy_of_exploratory_data_analysis">02.02.01. Philosophy of Exploratory Data Analysis</a></li>
+<li><a href="#020202_exercise_eda">02.02.02. Exercise: EDA</a></li>
+</ul>
+</li>
+<li><a href="#0203_the_data_science_process">02.03. The Data Science Process</a><ul>
+<li><a href="#020301_a_data_scientists_role_in_this_process">02.03.01. A Data Scientist's Role in This Process</a></li>
+</ul>
+</li>
+<li><a href="#0204_thought_experiment_how_would_you_simulate_chaos">02.04. Thought Experiment: How Would You Simulate Chaos?</a></li>
+<li><a href="#0205_case_study_realdirect">02.05. Case Study: RealDirect</a><ul>
+<li><a href="#020501_how_does_realdirect_make_money">02.05.01. How Does RealDirect Make Money?</a></li>
+<li><a href="#020502_exercise_realdirect_data_strategy">02.05.02. Exercise: RealDirect Data Strategy</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="0201_statistical_thinking_in_the_age_of_big_data">02.01. Statistical Thinking in the Age of Big Data<a class="headerlink" href="#0201_statistical_thinking_in_the_age_of_big_data" title="Permanent link">&para;</a></h2>
+<h3 id="020101_statistical_inference">02.01.01. Statistical Inference<a class="headerlink" href="#020101_statistical_inference" title="Permanent link">&para;</a></h3>
+<p><strong>statistical inference</strong></p>
+<p>extract meaning and info from data</p>
+<h3 id="020102_populations_and_samples">02.01.02. Populations and Samples<a class="headerlink" href="#020102_populations_and_samples" title="Permanent link">&para;</a></h3>
+<p><strong>population</strong></p>
+<p><strong>observation</strong> <script type="math/tex">N</script>
+</p>
+<p><strong>sample</strong></p>
+<h3 id="020103_populations_and_samples_of_big_data">02.01.03. Populations and Samples of Big Data<a class="headerlink" href="#020103_populations_and_samples_of_big_data" title="Permanent link">&para;</a></h3>
+<h3 id="020104_big_data_can_mean_big_assumptions">02.01.04. Big Data Can Mean Big Assumptions<a class="headerlink" href="#020104_big_data_can_mean_big_assumptions" title="Permanent link">&para;</a></h3>
+<h3 id="020105_modeling">02.01.05. Modeling<a class="headerlink" href="#020105_modeling" title="Permanent link">&para;</a></h3>
+<h2 id="0202_eploratory_data_analysis">02.02. Eploratory Data Analysis<a class="headerlink" href="#0202_eploratory_data_analysis" title="Permanent link">&para;</a></h2>
+<h3 id="020201_philosophy_of_exploratory_data_analysis">02.02.01. Philosophy of Exploratory Data Analysis<a class="headerlink" href="#020201_philosophy_of_exploratory_data_analysis" title="Permanent link">&para;</a></h3>
+<h3 id="020202_exercise_eda">02.02.02. Exercise: EDA<a class="headerlink" href="#020202_exercise_eda" title="Permanent link">&para;</a></h3>
+<h2 id="0203_the_data_science_process">02.03. The Data Science Process<a class="headerlink" href="#0203_the_data_science_process" title="Permanent link">&para;</a></h2>
+<h3 id="020301_a_data_scientists_role_in_this_process">02.03.01. A Data Scientist's Role in This Process<a class="headerlink" href="#020301_a_data_scientists_role_in_this_process" title="Permanent link">&para;</a></h3>
+<h2 id="0204_thought_experiment_how_would_you_simulate_chaos">02.04. Thought Experiment: How Would You Simulate Chaos?<a class="headerlink" href="#0204_thought_experiment_how_would_you_simulate_chaos" title="Permanent link">&para;</a></h2>
+<h2 id="0205_case_study_realdirect">02.05. Case Study: RealDirect<a class="headerlink" href="#0205_case_study_realdirect" title="Permanent link">&para;</a></h2>
+<h3 id="020501_how_does_realdirect_make_money">02.05.01. How Does RealDirect Make Money?<a class="headerlink" href="#020501_how_does_realdirect_make_money" title="Permanent link">&para;</a></h3>
+<h3 id="020502_exercise_realdirect_data_strategy">02.05.02. Exercise: RealDirect Data Strategy<a class="headerlink" href="#020502_exercise_realdirect_data_strategy" title="Permanent link">&para;</a></h3>
+<h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<!-- toc -->
+
+<!-- ref -->
+
+<!-- fig -->
+
+<!-- term -->
+
+<style type="text/css">
+    img{width: 51%; float: right;}
+</style>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../PythonDataScienceHandbook/" class="btn btn-neutral float-right" title="Intro">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../01/" class="btn btn-neutral" title="01. Introduction: What is Data Science?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2018 - 2019 <a href="https://github.com/shumez">shumez</a>
+</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../01/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../PythonDataScienceHandbook/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
