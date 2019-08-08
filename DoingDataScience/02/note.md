@@ -3,7 +3,7 @@ Filename: 	note.md
 Project: 	/Users/shume/Developer/DataScience/DoingDataScience/02
 Author: 	shumez <https://github.com/shumez>
 Created: 	2019-08-07 15:41:3
-Modified: 	2019-08-07 20:43:51
+Modified: 	2019-08-08 15:46:5
 -----
 Copyright (c) 2019 shumez
 -->
@@ -90,6 +90,10 @@ Big Data is a cultural phenomenon
 
 ###### Can \(N=\text{ALL}\)?
 
+[Paul Venezia, 2013][2013_VeneziaPaul]
+
+
+
 
 ### 02.01.05. Modeling
 ## 02.02. Eploratory Data Analysis
@@ -126,6 +130,7 @@ Big Data is a cultural phenomenon
 [020502]: #020502_exercise_realdirect_data_strategy
 
 <!-- ref -->
+[2013_VeneziaPaul]: https://www.infoworld.com/article/2614523/why-internet-surveillance-will-never-work.html
 
 <!-- fig -->
 
